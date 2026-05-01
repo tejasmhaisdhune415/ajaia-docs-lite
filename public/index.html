@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajaia Docs Lite</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">AI Delivery Prototype</p>
+        <h1>Ajaia Docs Lite</h1>
+      </div>
+      <label class="user-switcher">
+        Review as
+        <select id="userSelect" aria-label="Select active user"></select>
+      </label>
+    </header>
+
+    <main class="app-shell">
+      <aside class="sidebar">
+        <section class="card actions-card">
+          <button id="newDocBtn" class="primary">+ New document</button>
+          <label class="upload-box" for="fileInput">
+            <span>Import .txt / .md</span>
+            <small>Creates a new editable document</small>
+            <input id="fileInput" type="file" accept=".txt,.md,text/plain,text/markdown" />
+          </label>
+          <p id="uploadStatus" class="muted"></p>
+        </section>
+
+        <section class="card document-list-card">
+          <div class="section-heading">
+            <h2>Documents</h2>
+            <button id="refreshBtn" class="ghost">Refresh</button>
+          </div>
+          <div id="docList" class="doc-list"></div>
+        </section>
+      </aside>
+
+      <section class="editor-pane card">
+        <div id="emptyState" class="empty-state">
+          <h2>Select or create a document</h2>
+          <p>Use the seeded user selector to demonstrate ownership and sharing behavior.</p>
+        </div>
+
+        <div id="editorArea" class="hidden">
+          <div class="editor-header">
+            <div class="title-block">
+              <input id="titleInput" class="title-input" placeholder="Untitled Document" />
+              <p id="docMeta" class="muted"></p>
+            </div>
+            <div class="editor-actions">
+              <span id="saveStatus" class="save-status">Saved</span>
+              <button id="saveBtn" class="primary">Save</button>
+            </div>
+          </div>
+
+          <div class="toolbar" role="toolbar" aria-label="Rich text formatting toolbar">
+            <button data-command="bold" title="Bold"><strong>B</strong></button>
+            <button data-command="italic" title="Italic"><em>I</em></button>
+            <button data-command="underline" title="Underline"><u>U</u></button>
+            <span class="divider"></span>
+            <button data-block="h1">H1</button>
+            <button data-block="h2">H2</button>
+            <button data-block="p">Body</button>
+            <span class="divider"></span>
+            <button data-command="insertUnorderedList">• List</button>
+            <button data-command="insertOrderedList">1. List</button>
+          </div>
+
+          <div id="editor" class="editor" contenteditable="true" aria-label="Document editor"></div>
+
+          <section id="sharePanel" class="share-panel">
+            <div>
+              <h2>Share document</h2>
+              <p class="muted">Grant another seeded user access. This keeps scope small while proving the access model.</p>
+            </div>
+            <div class="share-controls">
+              <select id="shareUserSelect"></select>
+              <select id="permissionSelect">
+                <option value="edit">Can edit</option>
+                <option value="view">Can view</option>
+              </select>
+              <button id="shareBtn" class="secondary">Grant access</button>
+            </div>
+            <div id="shareList" class="share-list"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+    <script src="/app.js"></script>
+  </body>
+</html>

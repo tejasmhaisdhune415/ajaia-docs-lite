@@ -1,0 +1,18 @@
+{
+  "name": "ajaia-docs-lite",
+  "version": "1.0.0",
+  "description": "Lightweight collaborative document editor for Ajaia AI Delivery assessment",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node --test"
+  },
+  "keywords": ["documents", "collaboration", "editor", "node"],
+  "author": "Tejas Mhaisdhune",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}

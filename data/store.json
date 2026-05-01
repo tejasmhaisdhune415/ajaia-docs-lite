@@ -1,0 +1,77 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Tejas Mhaisdhune",
+      "email": "tejas@example.com"
+    },
+    {
+      "id": "u2",
+      "name": "Ava Reviewer",
+      "email": "ava.reviewer@example.com"
+    },
+    {
+      "id": "u3",
+      "name": "Jordan PM",
+      "email": "jordan.pm@example.com"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc_8ecd004a6709decd",
+      "title": "Welcome Product Brief",
+      "ownerId": "u1",
+      "content": "<h1>Welcome to Ajaia Docs Lite</h1><p>This prototype supports document creation, rich text editing, saving, reopening, file import, and basic sharing.</p><ul><li>Use the toolbar for formatting.</li><li>Upload a .txt or .md file to turn it into a document.</li><li>Share an owned document with another seeded user.</li></ul>",
+      "createdAt": "2026-05-01T16:56:40.938Z",
+      "updatedAt": "2026-05-01T16:56:40.938Z"
+    },
+    {
+      "id": "doc_c0fc7a8e20bed5b7",
+      "title": "Untitled Document",
+      "ownerId": "u1",
+      "content": "<h1>Untitled Document</h1><p>Start writing here...</p>",
+      "createdAt": "2026-05-01T16:56:43.120Z",
+      "updatedAt": "2026-05-01T16:56:43.120Z"
+    },
+    {
+      "id": "doc_43d95f1ce6a42d30",
+      "title": "Untitled Document",
+      "ownerId": "u1",
+      "content": "<h1>Untitled Document</h1><p>Start writing here...</p>",
+      "createdAt": "2026-05-01T16:56:46.935Z",
+      "updatedAt": "2026-05-01T16:56:46.935Z"
+    },
+    {
+      "id": "doc_36befc5203cae8c3",
+      "title": "Untitled Document",
+      "ownerId": "u1",
+      "content": "<h1>Ajaia AI Delivery Test Document</h1><div><h1><i>Ajaia AI Delivery Test Document</i></h1></div><div><h1><u>Ajaia AI Delivery Test Document</u></h1></div><h2>Ajaia AI Delivery Test Document</h2><div><br></div><div><p></p><ul><li>Ajaia AI Delivery Test Document</li></ul><div><br></div><div><ol><li></li></ol></div><p></p><h1>Ajaia AI Delivery Test Document</h1></div><div><br></div><div><br></div><div><br></div><div><br></div><div>this document was reviewd by tejas&nbsp; on ava reviewer&nbsp;</div><div><br></div><div><br></div><div><br></div><div>Ava added this line after the document was shared.</div><div><br></div>",
+      "createdAt": "2026-05-01T16:57:26.829Z",
+      "updatedAt": "2026-05-01T17:04:36.285Z"
+    },
+    {
+      "id": "doc_17b1b048f69ce4a9",
+      "title": "sample import",
+      "ownerId": "u1",
+      "content": "<h1>Imported Project Notes</h1><p>This sample file can be uploaded into Ajaia Docs Lite.</p><ul><li>It becomes a new editable document.</li><li>Markdown headings are converted to rich-text headings.</li><li>Simple bullet lists are preserved.</li></ul><p>Next steps:</p><ol><li>Edit this imported document.</li><li>Save it.</li><li>Share it with another seeded user.</li></ol>",
+      "createdAt": "2026-05-01T17:00:53.554Z",
+      "updatedAt": "2026-05-01T17:01:09.370Z"
+    }
+  ],
+  "shares": [
+    {
+      "documentId": "doc_17b1b048f69ce4a9",
+      "targetUserId": "u2",
+      "permission": "edit",
+      "createdAt": "2026-05-01T17:01:09.370Z",
+      "updatedAt": "2026-05-01T17:01:09.370Z"
+    },
+    {
+      "documentId": "doc_36befc5203cae8c3",
+      "targetUserId": "u2",
+      "permission": "edit",
+      "createdAt": "2026-05-01T17:03:02.196Z",
+      "updatedAt": "2026-05-01T17:03:02.196Z"
+    }
+  ]
+}
