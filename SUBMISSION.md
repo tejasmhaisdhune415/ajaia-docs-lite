@@ -15,7 +15,7 @@
 Paste deployed URL here:
 
 ```text
-TODO: https://your-deployment-url.example.com
+https://ajaia-docs-lite.onrender.com/
 ```
 
 ## Walkthrough video URL
@@ -23,7 +23,7 @@ TODO: https://your-deployment-url.example.com
 Paste Loom / YouTube / Google Drive video URL here:
 
 ```text
-TODO: https://your-video-url.example.com
+https://www.loom.com/share/e68745d2862649139d8797db5c05f42c
 ```
 
 ## Test accounts / seeded users
